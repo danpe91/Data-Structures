@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdio>
 #include <cstdlib>
 
 using namespace std;
@@ -17,7 +16,6 @@ int main(int argc, char *argv[])
 	imprimegrafo();
 	ordenarmayor();
 	imprimegrafo();
-
 	aristarbol=0;
 	num_aristas=0;
 	for(i=0;i<vertices; i++){
@@ -27,7 +25,6 @@ int main(int argc, char *argv[])
             a=pardevertices[num_aristas][0];//primer verice
             b=pardevertices[num_aristas][1];//segundo vertice
             i=a;
-            cout << num_aristas << ", " << i << endl;
             while(U[i]!=i) i=U[i];
             j=b;
             while(U[j]!=j) j=U[j];
